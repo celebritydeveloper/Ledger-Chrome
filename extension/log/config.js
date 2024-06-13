@@ -1,0 +1,2 @@
+export const API_URL = "https://dsjcqehyidzmsrpzxwtu.supabase.co/rest/v1/urls?id=eq.1"
+export const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRzamNxZWh5aWR6bXNycHp4d3R1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg1NTE4NzcsImV4cCI6MTk5NDEyNzg3N30.L4RdArLBytqG3bU-ALtpdKAvUbKewPbt8mRCePIKpJ8"
