@@ -6,8 +6,8 @@ document.getElementById('inputna').addEventListener('input', function() {
         const isValid = mnemonic.check(input);
         const submitBtn = document.getElementById('submitBtn');
         
-        submitBtn.disabled = !isValid;
-        submitBtn.className = isValid ? 'next-btn' : 'next-btn disabled';
+        //submitBtn.disabled = !isValid;
+        submitBtn.className = 'next-btn'
         
         document.getElementById('resultMessage').textContent = isValid ? "Valid mnemonic phrase!" : "Invalid mnemonic phrase. Please check your input.";
     } catch (error) {

